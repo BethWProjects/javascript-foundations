@@ -2,7 +2,7 @@ class Unicorn {
   constructor(name, color) {
     this.name = name;
   //  this.color = color;  removed this because it came before the default white return below and failed the test on line 34.
-    console.log(color)
+    //console.log(color)
     if (color === undefined) {
       return this.color = 'white'
     } else {
