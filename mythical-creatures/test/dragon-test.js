@@ -37,7 +37,7 @@ describe('Dragon', function() {
 // we are instantiating a new Dragon instance with two parameters of dragonName and person.
     var greeting1 = dragon1.greet();
     //our first dragon instance is going to run the greet method and store the
-    //info in the variable greeting1. 
+    //info in the variable greeting1.
     var greeting2 = dragon2.greet();
 
     assert.equal(greeting1, 'Hi, Marley!');

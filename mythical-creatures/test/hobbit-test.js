@@ -23,6 +23,9 @@ describe('Hobbit', function() {
 
   it('should gain 1 year after every birthday', function() {
     var hobbit = new Hobbit({ name: 'Meriadoc' });
+    // timeTravel() function is used to calculate birthday loop,
+    //is not called in the test to use. hobbit. is run in front of celebrateBirthday()
+    //so build within this function
 
     hobbit.celebrateBirthday();
     hobbit.celebrateBirthday();

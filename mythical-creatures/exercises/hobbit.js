@@ -1,10 +1,10 @@
 class Hobbit {
   constructor(hobbitName) {
-    this.name = hobbitName.name
-    this.age = 0
-    this.adult = true
-    this.old = false
-    this.hasRing = true
+    this.name = hobbitName.name  //needed this dot notation to pass the nested name {name: 'Frodo'} in the object in.
+    this.age = 0 // define the this.age property
+    this.adult = true //define the this.adult property, the code below will change the value if instructions do so
+    this.old = false //define the this.old property, the code below will change the value if instructions do so
+    this.hasRing = true //define the this.hasRing property, the code below will change the value if instructions do so
   }
   celebrateBirthday(){
     this.age += 1
@@ -29,21 +29,6 @@ class Hobbit {
 }
 
 
-
-  // timeTravel(num, hobbitName){
-  //   this.age++
-  //   if (hobbitName.name <= num) {
-  //     this.adult === false
-  //   } else if
-  //       (hobbitName.name >= num) {
-  //         this.adult === true
-  //       }
-  //   }
-
-
-//instantiate the new friend Bilbo and the new friend Mark
-//new Hobbit (this.name)
-//this.bilbo = new Hobbit;
 
 module.exports = Hobbit;
 
