@@ -1,18 +1,18 @@
 class Snowman {
-  constructor(snowmanInfo) {
-    this.carrots = snowmanInfo.carrots;
-    this.coal = snowmanInfo.coal;
-    this.buttons = snowmanInfo.buttons;
-    this.snowballs = snowmanInfo.snowballs;
-    this.magicHat = false;
+  constructor(details) {
+    this.carrots = details.carrots
+    this.coal = details.coal
+    this.buttons = details.buttons
+    this.snowballs = details.snowballs
+    this.magicHat = false
   }
-  canWearMagicHat() {
+  canWearMagicHat(){
     if (this.coal < 2 || this.buttons < 5 || this.carrots < 1 || this.snowballs < 2) {
-      this.magicHat;
-    } else {
-      this.magicHat = true;
-    }
+      return this.magicHat = false
+      //return false
+    } else
+    return this.magicHat = true
+    //return true
   }
 }
-
 module.exports = Snowman;
